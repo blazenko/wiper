@@ -4,15 +4,36 @@
    Author's custom styles
    ========================================================================== */
 
+body {
+	background:white;
+}
 
+.layer {
+	position:absolute;
+	width:800px;
+	height:250px;
+	top:10%;
+	left:25%;
+	font-family:'Arial Black', sans-serif;
+	font-size:90px;
+	text-align:center;
+	line-height:0.8;
+	padding-top:0px;
+}
 
+.bg-layer {
+	background:#f5f5f5;
+	border:1px solid #999;
+	color:#fff;
+}
 
+.layer1 { color:rgba(0, 255, 153, 0.5);}
+.layer2 { color:rgba(255, 0, 153, 0.5);}
+.layer3 { color:rgba(153, 0, 255, 0.5);}
 
-
-
-
-
-
+.layer4 { color:rgba(0, 153, 255, 0.5);}
+.layer5 { color:rgba(255, 153, 0, 0.5);}
+.layer6 { color:rgba(153, 255, 0, 0.5);}
 
 
 
