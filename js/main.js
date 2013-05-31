@@ -14,12 +14,12 @@ function getRandomInt (min, max) {
 
 var gridX = [0, 100, 300, 400, 650, 800];
 var gridY = [0, 50, 100, 125, 175, 200, 250];
-var interval = 1;
+var interval = 0.25;
 var zCnt = 100;
 
 function init() {
 	$('body').css('font-size', '150px');
-	$('.layer span').text('This is the title of not too many words, no matter!');
+	$('.layer span').text('arkzinov literarni kutak-Djordje Matic: KING');
 	drawGrid();
 	fontSize();
 	for (var i=0; i< $('.dancing-layer').length; i++) {
@@ -40,7 +40,7 @@ function init() {
 			delay:i*interval
 		});
 	}
-	setInterval(danceStep, interval * 1000 * $('.dancing-layer').length);
+	setInterval(danceStep, interval * 1000 * $('.dancing-layer').length * 2);
 }
 
 function danceStep() {
@@ -52,7 +52,7 @@ function danceStep() {
 		var y2 = getRandomInt(y1+1, gridY.length-1);
 		TweenLite.to(lyr, interval/2, {
 			clip:"rect("+gridY[y1]+"px,"+gridX[x2]+"px,"+gridY[y2]+"px,"+gridX[x1]+"px)",
-			ease:Power4.easeInOut,
+			ease:Power0.easeInOut,
 			delay:i*interval,
 			onStart:function() {
 				$(this.target).css('z-index', zCnt++);
@@ -62,7 +62,7 @@ function danceStep() {
 }
 
 function fontSize() {
-	while ($('.bg-layer').height() > 245) {
+	while ($('.bg-layer span').height() > 245) {
 		$('body').css('font-size', parseInt($('body').css('font-size')) - 1 + 'px');
 	}
 }
