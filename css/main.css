@@ -15,25 +15,39 @@ body {
 	top:10%;
 	left:25%;
 	font-family:'Arial Black', sans-serif;
-	font-size:90px;
 	text-align:center;
-	line-height:0.8;
-	padding-top:0px;
+	line-height:0.83;
+	padding-top:30px;
 }
 
 .bg-layer {
-	background:#f5f5f5;
-	border:1px solid #999;
-	color:#fff;
+	width:801px;
+	height:251px;
+	font-size:90px;
+	background-color:rgba(255,255,255,1);
+	background-image:url(../grfx/bg-50-50.png);
+	color:rgba(255,255,255,0.75);
+	text-shadow:3px 3px 0 rgba(0,0,0,0.1);
+}
+.dancing-layer {
+	background-color:rgba(255,255,255,0);
 }
 
-.layer1 { color:rgba(0, 255, 153, 0.5);}
-.layer2 { color:rgba(255, 0, 153, 0.5);}
-.layer3 { color:rgba(153, 0, 255, 0.5);}
+.layer1 { color:rgba(0, 0, 0, 0.3);font-size:87px;}
+.layer2 { color:rgba(255, 255, 0, 0.2);font-size:88px;font-family:'Times New Roman',serif;font-weight:bold;letter-spacing:10px;text-shadow:1px 1px 0 rgba(200,0,0,0.5)}
+.layer3 { color:rgba(0, 0, 0, 0.4);font-size:89px;}
 
-.layer4 { color:rgba(0, 153, 255, 0.5);}
-.layer5 { color:rgba(255, 153, 0, 0.5);}
-.layer6 { color:rgba(153, 255, 0, 0.5);}
+.layer4 { color:rgba(0, 0, 0, 1);font-size:91px;}
+.layer5 { color:rgba(255, 0, 0, 0.5);font-size:88px;font-family:Verdana,sans-serif;font-weight:bold;}
+.layer6 { color:rgba(0, 0, 0, 0);font-size:93px;text-shadow:0 0 8px rgba(0,0,0,0.8)}
+
+/*.layer1 { color:rgba(0, 255, 153, 0.5);font-size:87px;}
+.layer2 { color:rgba(255, 0, 153, 0.5);font-size:88px;}
+.layer3 { color:rgba(153, 0, 255, 0.5);font-size:89px;}
+
+.layer4 { color:rgba(0, 153, 255, 0.5);font-size:91px;}
+.layer5 { color:rgba(255, 153, 0, 0.5);font-size:92px;}
+.layer6 { color:rgba(153, 255, 0, 0.5);font-size:93px;}*/
 
 
 
