@@ -19,7 +19,7 @@ var zCnt = 100;
 
 function init() {
 	$('body').css('font-size', '150px');
-	$('.layer').text('This is the title of not too many words, no matter!');
+	$('.layer span').text('This is the title of not too many words, no matter!');
 	drawGrid();
 	fontSize();
 	for (var i=0; i< $('.dancing-layer').length; i++) {

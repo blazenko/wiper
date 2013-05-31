@@ -20,6 +20,10 @@ body {
 	text-align:center;
 	line-height:0.83;
 }
+	.layer span {
+		position:relative;
+	}
+
 
 .bg-layer {
 	width:801px;
@@ -34,13 +38,19 @@ body {
 	background-color:rgba(255,255,255,0);
 }
 
-.layer1 { color:rgba(0, 0, 0, 0.3);font-size:0.985em;}
-.layer2 { color:rgba(255, 255, 0, 0.2);font-size:0.99em;text-shadow:1px 1px 0 rgba(200,0,0,0.5)} /* font-family:'Times New Roman',serif;font-weight:bold;letter-spacing:0.15em; */
-.layer3 { color:rgba(0, 0, 0, 0.4);font-size:0.995em;}
+.layer1 { color:rgba(0, 0, 0, 0.3);}
+	.layer1 span {left:3px;}
+.layer2 { color:rgba(255, 255, 0, 0.2); text-shadow:1px 1px 0 rgba(200,0,0,0.5)} /* font-family:'Times New Roman',serif;font-weight:bold;letter-spacing:0.15em; */
+	.layer2 span {left:2px; top:3px;}
+.layer3 { color:rgba(0, 0, 0, 0.4);}
+	.layer3 span {left:-3px;}
 
-.layer4 { color:rgba(0, 0, 0, 1);font-size:1.005em;}
-.layer5 { color:rgba(255, 0, 0, 0.5);font-size:0.98em;font-family:Verdana,sans-serif;font-weight:bold;}
-.layer6 { color:rgba(0, 0, 0, 0);font-size:1.01em;text-shadow:0 0 8px rgba(0,0,0,0.8)}
+.layer4 { color:rgba(0, 0, 0, 1);}
+	.layer4 span {left:-2px; top:2px;}
+.layer5 { color:rgba(255, 0, 0, 0.5);font-size:0.96em;font-family:Verdana,sans-serif;font-weight:bold;}
+	.layer2 span {top:2px;}
+.layer6 { color:rgba(0, 0, 0, 0);text-shadow:0 0 8px rgba(0,0,0,0.8)}
+	.layer2 span {left:3px; top:-2px;}
 
 /*.layer1 { color:rgba(0, 255, 153, 0.5);font-size:87px;}
 .layer2 { color:rgba(255, 0, 153, 0.5);font-size:88px;}
