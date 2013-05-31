@@ -34,13 +34,13 @@ body {
 	background-color:rgba(255,255,255,0);
 }
 
-.layer1 { color:rgba(0, 0, 0, 0.3);font-size:0.97em;}
-.layer2 { color:rgba(255, 255, 0, 0.2);font-size:0.98em;font-family:'Times New Roman',serif;font-weight:bold;letter-spacing:0.11em;text-shadow:1px 1px 0 rgba(200,0,0,0.5)}
-.layer3 { color:rgba(0, 0, 0, 0.4);font-size:0.99em;}
+.layer1 { color:rgba(0, 0, 0, 0.3);font-size:0.985em;}
+.layer2 { color:rgba(255, 255, 0, 0.2);font-size:0.99em;text-shadow:1px 1px 0 rgba(200,0,0,0.5)} /* font-family:'Times New Roman',serif;font-weight:bold;letter-spacing:0.15em; */
+.layer3 { color:rgba(0, 0, 0, 0.4);font-size:0.995em;}
 
-.layer4 { color:rgba(0, 0, 0, 1);font-size:1.01em;}
+.layer4 { color:rgba(0, 0, 0, 1);font-size:1.005em;}
 .layer5 { color:rgba(255, 0, 0, 0.5);font-size:0.98em;font-family:Verdana,sans-serif;font-weight:bold;}
-.layer6 { color:rgba(0, 0, 0, 0);font-size:1.03em;text-shadow:0 0 8px rgba(0,0,0,0.8)}
+.layer6 { color:rgba(0, 0, 0, 0);font-size:1.01em;text-shadow:0 0 8px rgba(0,0,0,0.8)}
 
 /*.layer1 { color:rgba(0, 255, 153, 0.5);font-size:87px;}
 .layer2 { color:rgba(255, 0, 153, 0.5);font-size:88px;}

@@ -18,8 +18,9 @@ var interval = 1;
 var zCnt = 100;
 
 function init() {
-	drawGrid();
 	$('body').css('font-size', '150px');
+	$('.layer').text('This is the title of not too many words, no matter!');
+	drawGrid();
 	fontSize();
 	for (var i=0; i< $('.dancing-layer').length; i++) {
 		var lyr = $('.dancing-layer').get(i);
@@ -61,10 +62,8 @@ function danceStep() {
 }
 
 function fontSize() {
-	console.log("fontSize start");
 	while ($('.bg-layer').height() > 245) {
 		$('body').css('font-size', parseInt($('body').css('font-size')) - 1 + 'px');
-		console.log("fontSize STEP");
 	}
 }
 
