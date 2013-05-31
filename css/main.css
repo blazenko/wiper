@@ -11,7 +11,8 @@ body {
 .layer {
 	position:absolute;
 	width:800px;
-	height:250px;
+	height:220px;
+	overflow:hidden;
 	top:10%;
 	left:25%;
 	font-family:'Arial Black', sans-serif;
@@ -22,10 +23,9 @@ body {
 
 .bg-layer {
 	width:801px;
-	height:251px;
+	height:221px;
 	font-size:90px;
 	background-color:rgba(255,255,255,1);
-	background-image:url(../grfx/bg-50-50.png);
 	color:rgba(255,255,255,0.75);
 	text-shadow:3px 3px 0 rgba(0,0,0,0.1);
 }
@@ -50,7 +50,21 @@ body {
 .layer6 { color:rgba(153, 255, 0, 0.5);font-size:93px;}*/
 
 
-
+.line {
+	background-color:rgba(0,0,0,0.1);
+	position:absolute;
+	left:0;
+	top:0;
+}
+.line-v {
+	width:1px;
+	height:100%;
+}
+.line-h {
+	width:100%;
+	height:1px;
+	
+}
 
 
 

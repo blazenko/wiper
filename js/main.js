@@ -12,12 +12,13 @@ function getRandomInt (min, max) {
 
 
 
-var gridX = [0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800];
-var gridY = [0, 50, 100, 150, 200, 250];
+var gridX = [0, 100, 200, 250, 300, 400, 500, 550,650, 750, 800];
+var gridY = [0, 50, 100, 125, 175, 200, 250];
 var interval = 1;
 var zCnt = 100;
 
 function init() {
+	drawGrid();
 	for (var i=0; i< $('.dancing-layer').length; i++) {
 		var lyr = $('.dancing-layer').get(i);
 		var x11 = getRandomInt(0, gridX.length-2);
@@ -54,5 +55,16 @@ function danceStep() {
 		});
 	}
 }
+
+function drawGrid() {
+	for (var i=0; i<gridX.length ; i++) {
+		var line = $("<div class='line line-v'></div>").appendTo($('.bg-layer')).css('left', gridX[i]);
+	}
+	for (var i=0; i<gridY.length ; i++) {
+		var line = $("<div class='line line-h'></div>").appendTo($('.bg-layer')).css('top', gridY[i]);
+	}
+	
+}
+
 $(init)
 
