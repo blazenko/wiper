@@ -12,13 +12,15 @@ function getRandomInt (min, max) {
 
 
 
-var gridX = [0, 100, 200, 250, 300, 400, 500, 550,650, 750, 800];
+var gridX = [0, 100, 300, 400, 650, 800];
 var gridY = [0, 50, 100, 125, 175, 200, 250];
 var interval = 1;
 var zCnt = 100;
 
 function init() {
 	drawGrid();
+	$('body').css('font-size', '150px');
+	fontSize();
 	for (var i=0; i< $('.dancing-layer').length; i++) {
 		var lyr = $('.dancing-layer').get(i);
 		var x11 = getRandomInt(0, gridX.length-2);
@@ -44,15 +46,25 @@ function danceStep() {
 	for (var i=0; i< $('.dancing-layer').length; i++) {
 		var lyr = $('.dancing-layer').get(i);
 		var x1 = getRandomInt(0, gridX.length-2);
-		var x2 = getRandomInt(x1+2, gridX.length-1);
+		var x2 = getRandomInt(x1+1, gridX.length-1);
 		var y1 = getRandomInt(0, gridY.length-2);
-		var y2 = getRandomInt(y1+2, gridY.length-1);
+		var y2 = getRandomInt(y1+1, gridY.length-1);
 		TweenLite.to(lyr, interval/2, {
 			clip:"rect("+gridY[y1]+"px,"+gridX[x2]+"px,"+gridY[y2]+"px,"+gridX[x1]+"px)",
 			ease:Power4.easeInOut,
 			delay:i*interval,
-			onStart:function() {$(this.target).css('z-index', zCnt++)}
+			onStart:function() {
+				$(this.target).css('z-index', zCnt++);
+			}
 		});
+	}
+}
+
+function fontSize() {
+	console.log("fontSize start");
+	while ($('.bg-layer').height() > 245) {
+		$('body').css('font-size', parseInt($('body').css('font-size')) - 1 + 'px');
+		console.log("fontSize STEP");
 	}
 }
 

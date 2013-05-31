@@ -6,40 +6,41 @@
 
 body {
 	background:white;
+	font-size:60px;
 }
 
 .layer {
 	position:absolute;
 	width:800px;
-	height:220px;
+	height:250px;
 	overflow:hidden;
-	top:10%;
+	top:25%;
 	left:25%;
 	font-family:'Arial Black', sans-serif;
 	text-align:center;
 	line-height:0.83;
-	padding-top:30px;
 }
 
 .bg-layer {
 	width:801px;
-	height:221px;
-	font-size:90px;
+	height:auto;
+	font-size:1em;
 	background-color:rgba(255,255,255,1);
 	color:rgba(255,255,255,0.75);
-	text-shadow:3px 3px 0 rgba(0,0,0,0.1);
+	text-shadow:2px 2px 0 rgba(0,0,0,0.3);
+	overflow:visible;
 }
 .dancing-layer {
 	background-color:rgba(255,255,255,0);
 }
 
-.layer1 { color:rgba(0, 0, 0, 0.3);font-size:87px;}
-.layer2 { color:rgba(255, 255, 0, 0.2);font-size:88px;font-family:'Times New Roman',serif;font-weight:bold;letter-spacing:10px;text-shadow:1px 1px 0 rgba(200,0,0,0.5)}
-.layer3 { color:rgba(0, 0, 0, 0.4);font-size:89px;}
+.layer1 { color:rgba(0, 0, 0, 0.3);font-size:0.97em;}
+.layer2 { color:rgba(255, 255, 0, 0.2);font-size:0.98em;font-family:'Times New Roman',serif;font-weight:bold;letter-spacing:0.11em;text-shadow:1px 1px 0 rgba(200,0,0,0.5)}
+.layer3 { color:rgba(0, 0, 0, 0.4);font-size:0.99em;}
 
-.layer4 { color:rgba(0, 0, 0, 1);font-size:91px;}
-.layer5 { color:rgba(255, 0, 0, 0.5);font-size:88px;font-family:Verdana,sans-serif;font-weight:bold;}
-.layer6 { color:rgba(0, 0, 0, 0);font-size:93px;text-shadow:0 0 8px rgba(0,0,0,0.8)}
+.layer4 { color:rgba(0, 0, 0, 1);font-size:1.01em;}
+.layer5 { color:rgba(255, 0, 0, 0.5);font-size:0.98em;font-family:Verdana,sans-serif;font-weight:bold;}
+.layer6 { color:rgba(0, 0, 0, 0);font-size:1.03em;text-shadow:0 0 8px rgba(0,0,0,0.8)}
 
 /*.layer1 { color:rgba(0, 255, 153, 0.5);font-size:87px;}
 .layer2 { color:rgba(255, 0, 153, 0.5);font-size:88px;}
@@ -51,10 +52,12 @@ body {
 
 
 .line {
-	background-color:rgba(0,0,0,0.1);
 	position:absolute;
+	border-left:1px dotted rgba(0,0,0,0.15);
+	border-top:1px dotted rgba(0,0,0,0.15);
 	left:0;
 	top:0;
+	
 }
 .line-v {
 	width:1px;
