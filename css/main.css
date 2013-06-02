@@ -18,7 +18,7 @@ body {
 	left:25%;
 	font-family:'Arial Black', sans-serif;
 	text-align:center;
-	line-height:0.83;
+	line-height:1;
 }
 	.layer span {
 		position:relative;
@@ -40,8 +40,8 @@ body {
 
 .layer1 { color:rgba(0, 0, 0, 0.3);}
 	.layer1 span {left:3px;}
-.layer2 { color:rgba(255, 255, 0, 0.2); text-shadow:1px 1px 0 rgba(200,0,0,0.5)} /* font-family:'Times New Roman',serif;font-weight:bold;letter-spacing:0.15em; */
-	.layer2 span {left:2px; top:3px;position:absolute;transform:rotate(-2deg);}
+.layer2 { color:rgba(255, 255, 0, 0.2); text-shadow:3px 3px 0 rgba(200,0,0,0.5)} /* font-family:'Times New Roman',serif;font-weight:bold;letter-spacing:0.15em; */
+	.layer2 span {left:2px; top:3px;position:absolute;transform:rotate(-1.5deg);-webkit-transform:rotate(-1.5deg);}
 .layer3 { color:rgba(0, 0, 0, 0.4);}
 	.layer3 span {left:-3px;}
 

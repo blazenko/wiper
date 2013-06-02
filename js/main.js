@@ -14,12 +14,12 @@ function getRandomInt (min, max) {
 
 var gridX = [0, 100, 300, 400, 650, 800];
 var gridY = [0, 50, 100, 125, 175, 200, 250];
-var interval = 0.25;
+var interval = 1;
 var zCnt = 100;
 
 function init() {
 	$('body').css('font-size', '150px');
-	$('.layer span').text('arkzinov literarni kutak-Djordje Matic: KING');
+	$('.layer span').text('Bozo Matic: Laž je laž, ma koliko mi šutjeli o tome!');
 	drawGrid();
 	fontSize();
 	for (var i=0; i< $('.dancing-layer').length; i++) {
@@ -40,7 +40,7 @@ function init() {
 			delay:i*interval
 		});
 	}
-	setInterval(danceStep, interval * 1000 * $('.dancing-layer').length * 2);
+	setInterval(danceStep, interval * 1000 * $('.dancing-layer').length);
 }
 
 function danceStep() {
@@ -62,7 +62,7 @@ function danceStep() {
 }
 
 function fontSize() {
-	while ($('.bg-layer span').height() > 245) {
+	while ($('.bg-layer span').height() > 250) {
 		$('body').css('font-size', parseInt($('body').css('font-size')) - 1 + 'px');
 	}
 }
