@@ -12,13 +12,32 @@ function getRandomInt (min, max) {
 
 
 
-var gridX = [0, 100, 300, 400, 650, 800];
-var gridY = [0, 50, 100, 125, 175, 200, 250];
+var gridX = [
+	0,
+	100 + ((Math.round(Math.random()*4) - 2) * 25),
+	200 + ((Math.round(Math.random()*4) - 2) * 25),
+	300 + ((Math.round(Math.random()*4) - 2) * 25),
+	400 + ((Math.round(Math.random()*4) - 2) * 25),
+	500 + ((Math.round(Math.random()*4) - 2) * 25),
+	600 + ((Math.round(Math.random()*4) - 2) * 25),
+	700 + ((Math.round(Math.random()*4) - 2) * 25),
+	800
+];
+
+var gridY = [
+	0,
+	50 + ((Math.round(Math.random()*2) - 1) * 25),
+	100 + ((Math.round(Math.random()*2) - 1) * 25),
+	150 + ((Math.round(Math.random()*2) - 1) * 25),
+	200 + ((Math.round(Math.random()*2) - 1) * 25),
+	250
+];
+
 var interval = 1;
 var zCnt = 100;
 
 function init() {
-	$('body').css('font-size', '150px');
+	$('.wiper').css('font-size', '250px');
 	$('.layer span').text('Bozo Matic: Laž je laž, ma koliko mi šutjeli o tome!');
 	drawGrid();
 	fontSize();
@@ -62,9 +81,13 @@ function danceStep() {
 }
 
 function fontSize() {
+	var size;
 	while ($('.bg-layer span').height() > 250) {
-		$('body').css('font-size', parseInt($('body').css('font-size')) - 1 + 'px');
+		size = parseInt($('.wiper').css('font-size')) - 1;
+		$('.wiper').css('font-size', size + 'px');
 	}
+	$('.layer2 span').css('left', size / 350 + 'em' );
+	
 }
 
 function drawGrid() {
