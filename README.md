@@ -1,2 +1,2 @@
 RnD for Wiper (aka Transformer aka LayerDance),
-port from DynLayer to modern JS, jQ and TweenL
+port from ancient DynLayer to jQ and TweenLite
